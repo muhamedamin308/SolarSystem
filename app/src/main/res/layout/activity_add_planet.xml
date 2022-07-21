@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131739"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".AddPlanet">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="end"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/IMAGE"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:src="@drawable/ask" />
+
+            <ImageView
+                android:id="@+id/change"
+                android:layout_width="118dp"
+                android:layout_height="42dp"
+                android:layout_gravity="end"
+                android:layout_marginLeft="30dp"
+                app:srcCompat="@drawable/ic_baseline_photo_size_select_actual_24" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Change Image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/planetName"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:hint="Planet Name"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#59454141"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <ImageView
+                    android:id="@+id/mic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/mic2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/planetDesc1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:hint="Planet Description"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#59454141" />
+
+                <ImageView
+                    android:id="@+id/micDesc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/mic2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/planetDesc2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:hint="Planet More Description"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#59454141" />
+
+                <ImageView
+                    android:id="@+id/micDesc2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/mic2" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
